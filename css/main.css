@@ -86,7 +86,7 @@ header nav ul li {
 	list-style: none;
 }
 
-header nav ul li a{
+header nav ul li a {
 	text-decoration: none;
 	color:#77a466;
 }
@@ -113,7 +113,7 @@ header nav ul li a{
 .main-title p {
 	padding: 0;
 	font-size: 1em; /*16px*/
-	line-height: 25px;
+	line-height: 1.563em; /*25px*/
 }
 
 .section-one,
@@ -141,12 +141,12 @@ header nav ul li a{
 .reviews {
 	color: #333;
 	font-size: 1em; /*16px*/
-	line-height: 21px;
+	line-height: 1.313em; /*21px*/
 }
 
 .address {
 	font-size: 1em; /*16px*/
-	line-height: 24px;
+	line-height: 1.5em; /*24px*/
 }
 
 /*The widths are in a percentage!*/
@@ -165,4 +165,49 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.875em; /*14px*/
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 768px) {
+	.bottom-section {
+		border-top: 1px solid #eee;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+		flex-basis: 30%;
+		border-top: none;
+	}
+
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+		padding: 0 20px;
+	}
+}
+
+/* DESKTOP STYLES*/
+@media only screen and (min-width: 1200px) {
+	header {
+		justify-content: space-between;
+	}
+
+	header h1 {
+		width: 30%;
+    	padding: 0;
+    	border-bottom: none;
+    	text-align: left;
+	}
+
+	header nav {
+		width: 40%;
+	}
+
+	header nav ul {
+		display: flex;
+		justify-content: space-between
+	}
 }
